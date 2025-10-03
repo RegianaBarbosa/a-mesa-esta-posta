@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Mea+Culpa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
 
 * {
   margin: 0;
@@ -6,155 +7,375 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter", sans-serif;
+  background: #f5f5dc;
+  color: #222222;
+  line-height: 1.6;
 }
 
 section {
   width: 100%;
-  background: #f5f5dc;
+  padding: 3rem 1.5rem;
 }
 
 h2 {
   font-family: "Instrument Serif", serif;
-  letter-spacing: 1.5px;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
-.container-content{
-      max-width: 98%;
+h3 {
+  font-family: "Instrument Serif", serif;
+  font-size: 1.5rem;
 }
 
+h4 {
+  font-family: "Source Serif 4", serif;
+  font-weight: 600;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+h5 {
+  font-family: "Instrument Serif", serif;
+  font-style: italic;
+}
+
+.font-source-serif {
+  font-family: "Source Serif 4", serif;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+  line-height: 1.2;
+  font-weight: normal;
+}
+
+/* HERO */
 #hero {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
-  gap: 4rem;
-
-  height: 100vh;
+  gap: 8rem;
   width: 100%;
-
+  height: 100vh;
+  padding: 0 1rem;
   background: linear-gradient(rgba(121, 64, 63, 0.9), rgba(121, 64, 63, 0.9)),
     url("assets/background-img.png") no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
 }
 
 #img-hero {
-  padding: 10rem 0 10rem;
   width: 100%;
+  max-width: 450px;
+  margin: auto;
 }
 
 .hero p {
   font-family: "Instrument Serif", serif;
   font-style: italic;
   color: #e0af0e;
-  letter-spacing: 1.5px;
+  font-size: 0.875rem;
+  letter-spacing: 1.75px;
+  text-align: center;
+  max-width: 95%;
+  font-weight: 600;
 }
 
-.hero-text {
+/* INTRO */
+.intro {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  gap: 0.5rem;
-
-  max-width: 18rem;
+  padding: 2rem 1rem;
 }
 
-#intro {
-  height: 100vh;
-  width: 100%;
-  padding: 0 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#intro h5 {
-  color: #7a3337;
-  max-width: 90%;
-}
-
-.title-intro {
-  padding: 3rem 4rem 2rem 4rem;
-}
-
-.title-intro h2 {
+.intro h2 {
   text-align: center;
   color: #7a3337;
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 1.6rem;
+  max-width: 70%;
 }
 
-.title-intro h2 span {
-  font-style: italic;
+.intro h2 span {
   color: #e0af0e;
+  font-style: italic;
+}
+
+.intro h4 {
+  color: #7a3337;
+  margin: 0.5rem 0;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
 .intro-img {
-  width: 90%;
-  height: auto;
-  border-radius: 8px;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
 }
 
 .intro-img img {
-  object-fit: cover;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 15px;
 }
 
-#festas-israel {
+/* SEÇÕES */
+.section-vinho {
   background: #7a3337;
-  color: #fff;
+  color: #f5f5dc;
+  padding: 2rem 1rem;
+}
+
+.section-vinho h2 {
+  color: #fef0be;
+  font-weight: 500;
+}
+
+.section-white {
+  background: #f5f5dc;
+  color: #333;
+  padding: 2rem 1rem;
+}
+
+.section-white h2 {
+  color: #7a3337;
+}
+
+/* FESTAS DE ISRAEL */
+#festas-israel h2 {
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+  padding: 0 3rem;
+  color: #fef0be;
+  text-align: center;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 0.75px;
+}
+
+#festas-israel h5 {
+  color: #e0af0e;
+  text-align: center;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+}
+
+.festa-title {
+  margin-bottom: 1.5rem;
+}
+
+.festa-israel {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  padding: 1rem;
-  width: 100%;
 }
 
-.festas-israel h2 {
-  font-size: 2rem;
-}
-
-.festas-israel h3,
-h5 {
-  color: #e0af0e;
-  letter-spacing: 1px;
-}
-
-.festas-israel h5 {
-  font-style: italic;
-}
-
-.festas-israel-content {
+.title-festa {
   display: flex;
-  flex-direction: column;
-  align-items: start;
-  text-align: start;
-  padding: 0 0.25rem;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.title-festa h3 {
+  color: #e0af0e;
+  font-weight: 600;
+  letter-spacing: 0.7px;
 }
 
 .img-festa {
-  max-width: 20rem;
-  height: auto;
-  overflow: hidden;
+  margin: auto;
+  width: 100%;
   border-radius: 20px 20px 0 0;
+  overflow: hidden;
 }
 
 .img-festa img {
-  object-fit: contain;
+  display: block;
+}
+
+.festas-israel-content {
+  margin: 1rem auto;
+  max-width: 700px;
+  margin-bottom: 3rem;
 }
 
 .festas-cards {
-  width: 100%;
   display: flex;
-  direction: row;
-  gap: 0.25rem;
-}
-
-.festas-card {
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
 }
 
 .festas-card img {
   width: 100%;
-  height: auto;
+  max-width: 200px;
+  border-radius: 10px;
+}
+
+.festa-versiculo {
+  font-style: italic;
+  color: #e0af0e;
+  font-size: 0.765rem;
+  text-align: center;
+}
+
+/* CASAMENTO, ÚLTIMA CEIA, BODAS */
+.casamento-cana h4 {
+  color: #7a3337;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.casamento-cana span {
+  text-decoration: underline;
+}
+
+.bodas-cordeiro h5 {
+  color: #7a3337;
+  margin: 2rem 0;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.2;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.bodas-cordeiro span {
+  font-style: italic;
+}
+
+.img-container {
+  margin: 2rem auto;
+  max-width: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 100%;
+  display: block;
+}
+
+/* FOOTER */
+footer {
+  background: #7a3337;
+  color: #fff;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+footer h2 {
+  color: #fef0be;
+  font-weight: 500;
+}
+
+footer h4 {
+  color: #e0af0e;
+  margin-top: 1rem;
+}
+
+footer img {
+  margin: 1rem auto;
+  display: block;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1rem;
+  margin-bottom: 3rem;
+}
+
+.footer-content p {
+  font-size: 0.875rem;
+  color: #fef0be;
+}
+
+.footer-credits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem;
+  background: linear-gradient(rgba(121, 64, 63, 0.9), rgba(121, 64, 63, 0.9)),
+    url("assets/background-img.png") no-repeat center center/cover;
+}
+
+.footer-credits p {
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.footer-santo-role {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-santo-role p {
+  max-width: 10rem;
+}
+
+.footer-ice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Botão flutuante */
+.btn-flutuante {
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  background-color: #d4a574;
+  color: #7a3337;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s;
+
+  /* oculto por padrão */
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(8px);
+  transition: opacity 240ms ease, transform 240ms ease;
+}
+
+/* quando a classe .show for adicionada via JS, aparece */
+.btn-flutuante.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
 }
