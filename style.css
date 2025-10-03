@@ -191,7 +191,7 @@ p {
   justify-content: start;
   align-items: center;
   gap: 0.5rem;
-  width: 100%;
+  width: 20rem;
   margin-top: 0.5rem;
 }
 
@@ -273,6 +273,7 @@ p {
   line-height: 1.2;
   font-style: normal;
   font-weight: 600;
+  max-width: 30rem;
 }
 
 .bodas-cordeiro span {
