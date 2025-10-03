@@ -223,27 +223,6 @@
       </footer>
       <a href="#hero" class="btn-flutuante" aria-label="Voltar ao topo">↑</a>
 </body>
-<script>
-      document.addEventListener('DOMContentLoaded', function () {
-            const btn = document.querySelector('.btn-flutuante');
-            const intro = document.getElementById('intro');
-            if (!btn || !intro) return;
-
-            // posição do topo da seção intro relativamente ao documento
-            const introTop = intro.getBoundingClientRect().top + window.pageYOffset;
-
-            function toggleBtn() {
-                  if (window.pageYOffset >= introTop) {
-                        btn.classList.add('show');
-                  } else {
-                        btn.classList.remove('show');
-                  }
-            }
-
-            // checagem inicial + ouvir rolagem
-            toggleBtn();
-            window.addEventListener('scroll', toggleBtn, { passive: true });
-      });
-</script>
+<script src="script.js"></script>
 
 </html>
