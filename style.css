@@ -176,7 +176,9 @@ p {
 }
 
 .festa-title {
-  margin-bottom: 1.5rem;
+  margin: auto;
+  padding-bottom: 1.5rem;
+  max-width: 20rem;
 }
 
 .festa-israel {
@@ -191,7 +193,7 @@ p {
   justify-content: start;
   align-items: center;
   gap: 0.5rem;
-  width: 20rem;
+  width: 100%;
   margin-top: 0.5rem;
 }
 
@@ -273,7 +275,7 @@ p {
   line-height: 1.2;
   font-style: normal;
   font-weight: 600;
-  max-width: 30rem;
+  padding: 0 0.5rem;
 }
 
 .bodas-cordeiro span {
